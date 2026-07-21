@@ -1,0 +1,28 @@
+{
+  "name": "wk3",
+  "version": "1.0.0",
+  "description": "My first own docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamermonter/OwnDocker.git"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.22.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamermonter/OwnDocker/issues"
+  },
+  "homepage": "https://github.com/gamermonter/OwnDocker#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

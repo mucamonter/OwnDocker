@@ -8,13 +8,13 @@ services:
       dockerfile: Dockerfile
     container_name: WK3_C1
     ports:
-      - "8080:3000"  # <--- [Porta do PC : Porta do Código]
+      - "8080:3000"  
     environment:
-      - NODE_ENV=development  # <--- Ativa erros detalhados e logs
+      - NODE_ENV=development  
     volumes:
-      - .:/usr/src/app        # <--- Sincroniza seu código em tempo real com o PC
-      - /usr/src/app/node_modules # <--- Protege as dependências do contêiner
-    command: npm run dev      # <--- Executa o nodemon/live reload da sua aplicação
+      - .:/app    
+      - /app/node_modules
+    command: npm run dev   
     depends_on:
       db:
         condition: service_healthy
@@ -28,17 +28,18 @@ services:
     container_name: WK3_cont
     environment:
       POSTGRES_USER: Muca
-      POSTGRES_PASSWORD: 123  # <--- Simplificado para desenvolvimento local
+      POSTGRES_PASSWORD: "123" 
       POSTGRES_DB: WK3_DB
     ports:
-      - "5432:5432"  # <--- Permite que você conecte no banco via DBeaver/pgAdmin se quiser
+      - "5432:5432" 
     volumes:
       - dados_postgres:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - rede-local
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U murilomonteiro -d WK3_DB"]
-      interval: 5s   # <--- Mais rápido para o ambiente de desenvolvimento
+      test: ["CMD-SHELL", "pg_isready -U Muca -d WK3_DB"]
+      interval: 5s
       timeout: 3s
       retries: 3
     restart: unless-stopped
