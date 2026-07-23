@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 3</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
-
     <link rel="stylesheet" href="../backend/spec/static/css/style.css">
+
 </head>
+    
     <body>
-        <!--Create a website that show your tasks and make a list of complety tasks-->
-        <h1>Welcome</h1>
+        
+    
+        <h1>To do list</h1>
         <br>
+        
+        
         <h2>What do you need to do?</h2>
 
-        <form action="/save" method="POST">
+        <input type="text" placeholder="Write here ...">
 
-        <textarea name="content" id="editor" rows="10" placeholder="Write the text here ...." required >
-        </textarea>
-    
+        <button onclick="adicionarTarefa()" type="submit">Save</button>
+
+        <ul>
+            
+        </ul>
+
         <br>
 
-        <button type="submit">Save</button>
-    </form>
-
+        <a href="login.html">Mudar de html</a>
 
     </body>
+
+    <script src="../backend/spec/static/js/script.js"></script>
 </html>
