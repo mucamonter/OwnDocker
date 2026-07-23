@@ -10,6 +10,8 @@ function adicionarTarefa(){
     Fli.innerHTML = Vinput + '<span onclick="deletarTarefa(this)">  ❌</span>'
 
     document.querySelector("input").value = ""
+
+    
 }
 
 function deletarTarefa(elementoClicado){
