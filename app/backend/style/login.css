@@ -11,15 +11,7 @@ body{
     background-color: rgb(144, 144, 250);
 }
 
-.container{
-    width: 450px;
-    text-align: center;
-    align-items: center;
-    height: 100vh;
-    background-color: transparent;
-    border:2px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
-}
+
 
 .form{
     display: flex;
@@ -27,7 +19,6 @@ body{
     padding:20px;
     border:1px solid #ccc;
     border-radius: 8px;
-
 }
 
 .input-box{

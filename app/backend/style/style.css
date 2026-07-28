@@ -1,9 +1,27 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.content{
+   align-items: center;
+   
+}
+
  body{
     font-family: cursive;
  }
+
  body h1{
   text-align: center;
-  background-color: rgb(142, 253, 253);
+  background-color: gray;
+  color: white;
 }
 
+ form{
+   border-radius: 5px;
+   border-color: aliceblue;
+   background-color: bisque;
+}
 

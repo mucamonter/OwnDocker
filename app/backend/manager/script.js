@@ -1,5 +1,9 @@
+const API_URL = "http://localhost:5432/tasks";
+
+
 function adicionarTarefa(){
     let Vinput = document.querySelector("input").value
+
 
     // Evita adicionar tarefas em branco
     if (Vinput.trim() === "") return;
