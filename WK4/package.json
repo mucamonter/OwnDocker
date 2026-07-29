@@ -1,0 +1,28 @@
+{
+  "name": "wk4",
+  "version": "1.0.0",
+  "description": "Second time recreating docker server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamermonter/OwnDocker.git"
+  },
+  "keywords": [
+    "second",
+    "segundo"
+  ],
+  "author": "Muca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamermonter/OwnDocker/issues"
+  },
+  "homepage": "https://github.com/gamermonter/OwnDocker#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "mysql2": "^3.23.2"
+  },
+  "devDependencies": {}
+}

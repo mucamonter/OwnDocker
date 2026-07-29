@@ -9,4 +9,6 @@ dist
 .dockerignore
 #não precisa quebrar o cache inteiro por conta dele
 
+.env
+
 
