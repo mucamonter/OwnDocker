@@ -1,0 +1,9 @@
+-- /////////COMMANDS TO RUN///////////////////
+
+-- ~/: sudo mysql
+
+CREATE USER ''@'localhost' IDENTIFIED BY '';
+
+GRANT ALL PRIVILEGES ON *.* TO ''@'' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
