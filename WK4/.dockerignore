@@ -1,0 +1,14 @@
+node_modules
+#Porque é uma pasta pezada com os pré requisitos, sendo que ele pode baixar automaticamente
+
+npm-debug.log
+
+dist
+#se compilado no windowos/mac pode resultar em conflito no linux
+
+.dockerignore
+#não precisa quebrar o cache inteiro por conta dele
+
+.env
+
+

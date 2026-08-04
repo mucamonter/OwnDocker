@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mucamonter/OwnDocker/issues"
   },
-  "homepage": "https://github.com/mucamonter/OwnDocker/tree/Month-2#readme"
+  "homepage": "https://github.com/mucamonter/OwnDocker/tree/Month-2#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

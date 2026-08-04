@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:3306/tasks"
 
-function addTask(){
+function addtask(){
     let Vinput = document.querySelector("input").value
 
     if(Vinput.trim() === "") return;
