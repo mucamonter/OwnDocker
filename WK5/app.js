@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 
 //-----------------------------------------------------------
 const app = express();
@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api', tarefaRoutes);
+//I didn't understand that
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
@@ -22,4 +23,4 @@ app.listen(PORT, () => {
 //Variables: tarefaRoutes, PORT
 
 //file function: when the main directory is acessed the tarefaRoutes is called 
-//
+//defines and show the using port

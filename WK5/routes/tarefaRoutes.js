@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const tarefaController = require('../controller/tarefaController');
+import express from 'express';
+import router from express.Router();
+import tarefaController from '../controller/tarefaController'
 
 router.get('/tarefas', tarefaController.listarTarefa);
 router.post('/tarefas', tarefaController.criarTarefa);
